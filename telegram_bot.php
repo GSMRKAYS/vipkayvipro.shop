@@ -1,6 +1,6 @@
 <?php
 // Token của bot Telegram (phần này sẽ được bảo vệ khỏi F12)
-$botToken = "8467571200:AAExmACKh1qhb67Zj77Oj6CrfkGxWZzVprg"; // Thay thế bằng token thật của bạn
+$botToken = "8301552072:AAE8XG6Azgud5GVtYPrvvLo04HE8F_9ZN2c"; // Thay thế bằng token thật của bạn
 $chatId = "5903999893"; // Thay thế bằng chat ID của bạn hoặc ID của nhóm bạn muốn gửi tin nhắn đến
 
 // Kiểm tra phương thức yêu cầu
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "⏰ *Thời gian*: " . date("d/m/Y H:i:s") . "\n";
 
     // Gửi tin nhắn đến Telegram
-    $url = "https://api.telegram.org/bot{$botToken}/sendMessage";
+    $url = "https://api.telegram.org/bot{TOKEN}/sendMessage";
     $postData = [
         'chat_id' => $chatId,
         'text' => $message,
